@@ -1,0 +1,312 @@
+/*
+布局-样式
+
+
+
+*/
+
+body,h2,p,li{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #333;
+	background:white/*背景为白色*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: local;
+	position: relative;
+}
+h1{
+	color: #F00;
+	text-align: center;
+}
+p{
+	color: black;
+	text-align: center;
+	line-height:1.5 ;
+}
+			/*导航条的设置*/
+			a{
+				text-decoration: 14px;
+			}	
+			nav{
+				/*导航条的样式*/
+				background: rgb(28, 75, 169);
+				margin: 10px auto;/*设置格式为上右下左*/
+				
+				height: 42px;
+				width: 100%;
+				/*设置宽度与浏览器相同*/
+			}
+			.navcon{
+				/*导航条中无序列表的样式*/
+				margin: 0px auto;
+				/*内容在导航条中居中*/
+				width: 1200px;
+				height: 42px;
+				list-style: none;/*去掉列表项的项目符号*/
+			}
+			.navcon li{
+				/*导航条中每个列表项的样式*/
+				width: 120px;
+				float: left;
+				/*每个列表项左浮动，使列表项水平排列*/
+			}
+			.navcon li a{
+				/*超链接文字样式*/
+				display: block;
+				/*转换为块元素，可以设置宽度和高度*/
+				width: 120px;
+				height: 42px;
+				line-height: 42px;
+				text-align: center;
+				color: #FFF;
+			}
+			.navcon li a:hover{
+				/*鼠标指针悬停到超链接文字上时的样式*/
+				color: rgb(28,75,169);
+				background: #fff;
+				/*指针悬停时宽度放大1.2倍，高度放大1.2，整体等比放大1.2倍*/
+				transform: scale(1.2,1.2);
+				
+			}
+			.top{
+				width: 858px;
+				height: 60px;
+				margin-bottom: 2px;
+				overflow: hidden;
+			}
+			.top1{
+				width: 120px;
+				height:60px;
+				float:left;	
+				margin-right: 10px;	
+				
+			}
+			.top2{
+				width:858;
+				height:40px;
+				float:right;
+				margin-left: 10px;
+				text-align: center;
+				margin-right: 120px;
+			}
+			.marquee{
+			}
+.text1{/*图片下方表示图片内容的文字*/
+	text-align: 2em;
+	line-height: 25px;
+}
+.text2{/*版权所有   这个字体的相关设置*/
+	text-align: center;
+}
+.text3{/*返回  这个字体的相关设置*/
+	text-align: right;
+}
+.text4{/*最广泛使用的文本内容*/
+	text-align: left;
+	text-indent: 2em;
+}
+
+/*整体盒子的样式*/
+.content{
+	width: 858px;
+	height: auto;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	padding: 20px;
+	background: url(images/bodybg.jpg);
+	background-position: repeat;
+}
+li{
+	color:#f00;
+	line-height: 25px;
+}
+
+/*每part的设置*/
+/*第一part*/
+.part1{
+	width: 858px;
+	height: 300px;
+	margin: 5px 5px 5px 5px;
+	clear: both;
+}
+.part1-one{
+	width: 400px;
+	height: 275;
+	float: left;
+	margin-top: 20px;
+	margin-right: 5px;
+}
+.part1-two{
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+	width: 350px;
+	height: 275px;
+}
+.data {
+	float: right;
+	min-width: 100px;
+	color: #666;
+	font-size: 14px;
+	margin-right: 2px;
+}
+	
+	
+/*第二part*/
+.part2{
+	width: 858px;
+	height: 260px;
+	margin: 5px;
+}
+.part2-one{
+	float: left;
+	width: 350px;
+	height: 260px;
+}
+.part2-two{
+	float: right;
+	width: 400px;
+	height: 260px;
+}
+			.topic-section{
+				width: 400px;
+				height: 260px;
+				margin: 5px;
+			}
+			.topic-list{
+				display: grid;
+				grid-template-columns: repeat(2,1fr);
+				gap: 3px;/*项之间的间距*/
+			}
+			.topic-item{
+				width: 175px;
+				height: 40px;
+				border: 1px solid #e0e0e0;/*边框*/
+				padding: 2px 2px;/*这个具体是什么效果，不太理解*/
+				text-align: center;
+				transition: all 0.3s ease;
+			}
+			.topic-item:hover{
+				box-decoration:none;
+				color: #333;
+				line-height: 1.4;
+			}
+
+/*第三part*/
+			.part3{
+				width: 858px;
+				height: 400px;
+				margin: 5px;
+			}
+			.part3-one{
+				width: 350px;
+				height: 233px;
+				float:left;
+				clear: both;
+			}
+			.part3-two{
+				margin: 0 ;
+				width: 245px;
+				height: 233px;
+				clear: both;
+			}
+			.part3-three{
+				width: 245px;
+				height: 233px;
+				float: right;
+				clear: both;
+			}
+			.p3-h2{
+				text-align: center;
+				margin: 10px;
+			}
+			/*copy的css*/
+			.image-hover-effect {
+			  position: relative;
+			  display: inline-block;
+			  overflow: hidden;
+			}
+			
+			.image-hover-effect img {
+			  display: block;
+			  width: 100%;
+			  transition: opacity 0.3s ease;
+			}
+			
+			.image-hover-effect::after {
+			  content: "▶"; /* 或使用背景图片 */
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  opacity: 0;
+			  transition: opacity 0.3s ease;
+			  
+			  /* 图标样式 */
+			  background: rgba(0, 0, 0, 0.7);
+			  color: white;
+			  border-radius: 50%;
+			  width: 60px;
+			  height: 60px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  font-size: 24px;
+			}
+			
+			.image-hover-effect:hover img {
+			  opacity: 1;
+			  transform: scale(1.2,1.2);
+			}
+			
+			.image-hover-effect:hover::after {
+			  opacity: 1;
+			}
+/*.p3网格设置3个视频位置*/
+			.topic-list-p3{
+				display: grid;
+				grid-template-columns: repeat(3,1fr);
+				gap: 8px;/*项之间的间距*/
+			}
+/*P3链接到的视频界面的设置*/
+.p3-video{
+	width: 858px;
+	height: 600px;
+	/*以下为copy的ccs*/
+	display: flex;
+	  justify-content: center; /* 水平居中 */
+	  align-items: center;     /* 垂直居中 */
+	  min-height: 100vh;       /* 容器高度为整个视口 */
+	}
+	
+	
+/*给结尾增加一个盒子*/
+.end{
+	width: 858px;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}	
+
+
+
+
+/*产教融合的ccs设计*/
+
+
+
+
+
+
+
+/*广城专题的ccs设计*/
+
+
+
+
+
